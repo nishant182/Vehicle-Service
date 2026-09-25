@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Vehicle Service</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">🚗</span>
+            <span>AI Vehicle Service</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#service-centers">Service Centers</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-buttons">
+
+            <button class="login-btn" onclick="openLogin()">
+                Login
+            </button>
+
+            <button class="register-btn" onclick="openRegister()">
+                Register
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    ✨ AI-Powered Vehicle Care
+                </div>
+
+                <h1>
+                    Smarter Care
+                    <br>
+                    for Your
+                    <span>Vehicle</span>
+                </h1>
+
+                <p>
+                    AI-powered vehicle health monitoring,
+                    predictive maintenance and hassle-free
+                    service booking — all in one place.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button
+                        class="primary-btn"
+                        onclick="getStarted()"
+                    >
+                        Get Started
+                        <span>→</span>
+                    </button>
+
+                    <button
+                        class="secondary-btn"
+                        onclick="learnMore()"
+                    >
+                        Learn More
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= HERO FEATURES ================= -->
+
+            <div class="hero-features">
+
+                <div class="hero-feature">
+
+                    <div class="feature-circle">
+                        ♥
+                    </div>
+
+                    <div>
+                        <h3>Vehicle Health</h3>
+                        <p>Analysis</p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature-divider"></div>
+
+
+                <div class="hero-feature">
+
+                    <div class="feature-circle">
+                        ◉
+                    </div>
+
+                    <div>
+                        <h3>Predictive</h3>
+                        <p>Maintenance</p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature-divider"></div>
+
+
+                <div class="hero-feature">
+
+                    <div class="feature-circle">
+                        ◇
+                    </div>
+
+                    <div>
+                        <h3>AI Damage</h3>
+                        <p>Detection</p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature-divider"></div>
+
+
+                <div class="hero-feature">
+
+                    <div class="feature-circle">
+                        🔧
+                    </div>
+
+                    <div>
+                        <h3>Service Center</h3>
+                        <p>Booking</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="drive-text">
+                Drive Better
+                <br>
+                <span>With AI</span>
+            </div>
+
+        </section>
+
+
+        <!-- ================= SERVICES ================= -->
+
+        <section class="services-section" id="services">
+
+            <div class="section-heading">
+
+                <span>SMART VEHICLE SERVICES</span>
+
+                <h2>
+                    Everything Your Vehicle Needs
+                </h2>
+
+                <p>
+                    Intelligent tools designed to make
+                    vehicle maintenance simple and smarter.
+                </p>
+
+            </div>
+
+
+            <div class="service-grid">
+
+                <div class="service-card">
+
+                    <div class="service-icon health-icon">
+                        ♥
+                    </div>
+
+                    <h3>Vehicle Health</h3>
+
+                    <p>
+                        Monitor your vehicle health using
+                        intelligent data analysis.
+                    </p>
+
+                    <button>
+                        Explore →
+                    </button>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon maintenance-icon">
+                        ◉
+                    </div>
+
+                    <h3>Predictive Maintenance</h3>
+
+                    <p>
+                        Get smart maintenance recommendations
+                        before problems become serious.
+                    </p>
+
+                    <button>
+                        Explore →
+                    </button>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon damage-icon">
+                        ◇
+                    </div>
+
+                    <h3>AI Damage Detection</h3>
+
+                    <p>
+                        Upload vehicle images and get
+                        AI-assisted damage analysis.
+                    </p>
+
+                    <button>
+                        Explore →
+                    </button>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon booking-icon">
+                        🔧
+                    </div>
+
+                    <h3>Service Booking</h3>
+
+                    <p>
+                        Find service centers and book
+                        vehicle services easily.
+                    </p>
+
+                    <button>
+                        Explore →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about-section" id="about">
+
+            <div class="about-content">
+
+                <span>ABOUT OUR PLATFORM</span>
+
+                <h2>
+                    Your Vehicle's
+                    <strong>AI Care Partner</strong>
+                </h2>
+
+                <p>
+                    AI Vehicle Service combines artificial
+                    intelligence, predictive maintenance and
+                    digital service management to simplify
+                    vehicle ownership.
+                </p>
+
+                <div class="about-points">
+
+                    <div>
+                        ✓ Smart vehicle monitoring
+                    </div>
+
+                    <div>
+                        ✓ AI-powered recommendations
+                    </div>
+
+                    <div>
+                        ✓ Predictive maintenance
+                    </div>
+
+                    <div>
+                        ✓ Complete service history
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SERVICE CENTER ================= -->
+
+        <section
+            class="service-center-section"
+            id="service-centers"
+        >
+
+            <div class="section-heading">
+
+                <span>SERVICE CENTERS</span>
+
+                <h2>
+                    Find a Service Center
+                </h2>
+
+                <p>
+                    Find suitable vehicle service centers
+                    and book your service appointment.
+                </p>
+
+            </div>
+
+
+            <div class="center-placeholder">
+
+                <div class="location-icon">
+                    📍
+                </div>
+
+                <h3>
+                    Nearby Service Centers
+                </h3>
+
+                <p>
+                    Service center discovery will be
+                    connected in the next development phase.
+                </p>
+
+                <button class="primary-btn">
+                    Find Service Center →
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🚗 AI Vehicle Service
+        </div>
+
+        <p>
+            Intelligent Vehicle Health & Service Management
+        </p>
+
+        <div class="footer-line"></div>
+
+        <small>
+            © 2026 AI Vehicle Service. All rights reserved.
+        </small>
+
+    </footer>
+
+
+    <!-- ================= LOGIN MODAL ================= -->
+
+    <div
+        class="modal"
+        id="loginModal"
+    >
+
+        <div class="modal-box">
+
+            <button
+                class="close-btn"
+                onclick="closeModal()"
+            >
+                ×
+            </button>
+
+            <div class="modal-icon">
+                🚗
+            </div>
+
+            <h2>
+                Welcome Back
+            </h2>
+
+            <p>
+                Login to continue your vehicle journey.
+            </p>
+
+            <input
+                type="email"
+                placeholder="Email or Mobile Number"
+            >
+
+            <input
+                type="password"
+                placeholder="Password"
+            >
+
+            <button class="modal-submit">
+                Login
+            </button>
+
+            <p class="modal-footer">
+                Don't have an account?
+
+                <span onclick="openRegister()">
+                    Register
+                </span>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= REGISTER MODAL ================= -->
+
+    <div
+        class="modal"
+        id="registerModal"
+    >
+
+        <div class="modal-box">
+
+            <button
+                class="close-btn"
+                onclick="closeModal()"
+            >
+                ×
+            </button>
+
+            <div class="modal-icon">
+                👤
+            </div>
+
+            <h2>
+                Create Account
+            </h2>
+
+            <p>
+                Start managing your vehicle smarter.
+            </p>
+
+            <input
+                type="text"
+                placeholder="Full Name"
+            >
+
+            <input
+                type="email"
+                placeholder="Email"
+            >
+
+            <input
+                type="password"
+                placeholder="Password"
+            >
+
+            <button class="modal-submit">
+                Create Account
+            </button>
+
+            <p class="modal-footer">
+                Already have an account?
+
+                <span onclick="openLogin()">
+                    Login
+                </span>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
